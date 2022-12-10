@@ -1,0 +1,44 @@
+:root {
+    --body: #fff;
+    --a: #000;
+    --aHover: #707070;
+    --selectionText: #fff;
+    --selectionBg: #303030;
+    --navActive: #6d8ec3;
+    --navButtonText: #000;
+    --navButtonBg: #efeeee;
+    --navButtonHoverText: #fff;
+    --navButtonHoverBg: #000;
+    --heading-small: #000;
+    --heading-large: #303030;
+    --heading-medium: #000;
+    --shortBioP: #505050;
+    --sideBar: #ddd;
+    --socialIconsHover: #505050;
+    --modelIconText: #fff;
+    --modelIconBg: #303030;
+    --mobileShortBioH3: #303030;
+    --mobileShortBioP: #303030;
+    --sidepanel: #eee;
+    --sidepanelA: #000;
+    --sidepanelAHover: #505050;
+    --closeBtn: #000;
+    --cursor: #fff;
+    --item: #202124;
+    --input: #efeeee;
+    --inputHover: #909090;
+    --inputBtnHover: #303030;
+
+
+    
+    --white: #fff;
+    --ewhite: #eee;
+    --lightwhite: #efeeee;
+    --lightgrey: #ddd;
+    --bg: white;
+    --white30: #303030;
+    --white50: #505050;
+    --white60: #606060;
+    --white75: #757575;
+    --black: #000;
+}
