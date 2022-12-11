@@ -336,6 +336,8 @@ nav {
     .eljosLogo {
         width: 200px;
         height: 200px;
+        border-radius: 50%;
+        box-shadow: 15px 35px 50px #50505070;
     }
 
     .downBar-shortBio {
