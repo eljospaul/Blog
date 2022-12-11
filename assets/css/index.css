@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background-color: var(--body);
     transition: 1s;
     transition-timing-function: cubic-bezier(.93,.01,.12,1);
