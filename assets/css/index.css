@@ -141,6 +141,8 @@ nav {
 .eljosLogo  {
     width: 300px;
     height: 300px;
+    border-radius: 50%;
+    box-shadow: 15px 35px 50px #50505070;
     user-select: none;
     pointer-events: none;
 }
