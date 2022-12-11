@@ -25,6 +25,7 @@ function mode() {
 }
 function dark() {
     root.style.setProperty("--body", "#202124")
+    root.style.setProperty("--bgImage", "url('https://eljospaul.github.io/Blog/assets/images/Eljos.Paul.jpg')")
     root.style.setProperty("--a", "#fff")
     root.style.setProperty("--aHover", "#5f6368")
     root.style.setProperty("--selectionText", "#303030")
@@ -60,6 +61,7 @@ function dark() {
 }
 function light() {
     root.style.setProperty("--body", "#fff")
+    root.style.setProperty("--bgImage", "url('')")
     root.style.setProperty("--a", "#000")
     root.style.setProperty("--aHover", "#505050")
     root.style.setProperty("--selectionText", "white")

@@ -1,5 +1,6 @@
 :root {
     --body: #fff;
+    --bgImage: url("https://eljospaul.github.io/Blog/assets/images/Eljos.Paul.jpg");
     --a: #000;
     --aHover: #707070;
     --selectionText: #fff;
