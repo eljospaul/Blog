@@ -1,2 +1,2 @@
-# Blog
- Blog by Eljos Paul
+# Simple Portfolio
+Simple portfolio design idea to get inspired!
