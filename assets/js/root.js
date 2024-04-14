@@ -85,7 +85,7 @@ function light() {
     root.style.setProperty("--sidepanelA", "#000")
     root.style.setProperty("--sidepanelAHover", "#505050")
     root.style.setProperty("--closeBtn", "#000")
-    root.style.setProperty("--cursor", "#fff")
+    root.style.setProperty("--cursor", "#909090")
     root.style.setProperty("--item", "#202124")
     root.style.setProperty("--input", "#efeeee")
     root.style.setProperty("--inputHover", "#ddd")
