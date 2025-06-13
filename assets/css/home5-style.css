@@ -631,8 +631,14 @@ p {
 
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
+  .ctaBtn {
+    display: none !important; }
+  .introSection {
+    padding-top: 10px !important; }
   .spaceWatermark {
     display: none !important; }
+  .designTitle {
+    font-size: 90px !important; }
   .designWatermark {
     display: none !important; }
   .musicWatermark {
@@ -666,7 +672,7 @@ p {
       margin-top: 15px; }
   .header-ma .caption {
     display: block !important;
-    padding: 140px 0 80px; }
+    padding: 160px 0 80px; }
     .header-ma .caption h1 {
       font-size: 45px; }
   .header-ma .mimg {
