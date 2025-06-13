@@ -631,6 +631,12 @@ p {
 
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
+  .spaceWatermark {
+    display: none !important; }
+  .designWatermark {
+    display: none !important; }
+  .musicWatermark {
+    display: none !important; }
   .sub-head {
     margin-left: 15px; }
   .header-ma .caption h1 {
@@ -653,6 +659,7 @@ p {
       margin-top: 140px; } }
 
 @media screen and (max-width: 768px) {
+  
   .sec-head {
     display: block !important; }
     .sec-head .ml-auto {
