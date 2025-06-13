@@ -633,6 +633,8 @@ p {
 @media screen and (max-width: 992px) {
   .ctaBtn {
     display: none !important; }
+    .slideHid {
+    display: none !important; }
   .introSection {
     padding-top: 10px !important; }
   .spaceWatermark {
