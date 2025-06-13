@@ -1,0 +1,161 @@
+/* --------------- Works --------------- */
+
+.works-ma{
+    position: relative;
+    overflow: hidden !important;
+
+    .gallery-img{
+
+        .swiper-container{
+            overflow: visible;
+        }
+
+        .bg-img{
+            height: 480px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+            background-position: center;
+
+            a{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .gallery-text{
+        text-align: center;
+        margin: 60px auto 0;
+        z-index: 9;
+
+        .swiper-container,
+        .swiper-slide{
+            height: 100px !important;
+        }
+
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+        }
+
+        .text{
+            width: 100%;
+            text-align: center;
+
+            h4{
+                font-size: 50px;
+                line-height: 1;
+            }
+
+            h6{
+                margin-top: 15px;
+                overflow: hidden;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 300;
+                letter-spacing: 2px;
+
+                span{
+                    transform: translateY(50px);
+                    transition: all .8s;
+                }
+            }
+        }
+
+        .swiper-slide-active{
+
+            .text{
+
+                h6{
+
+                    span{
+                        transform: translateY(0);
+                        transition-delay: .5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-controls{
+        position: absolute;
+        bottom: 140px;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+
+        .swiper-button-prev,
+        .swiper-button-next{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: auto;
+            color: #fff;
+            z-index: 9;
+    
+            &:after{
+                display: none;
+            }
+
+            span{
+                white-space: nowrap;
+            }
+        }
+
+        .swiper-button-prev{
+            left: 120px;
+
+            i{
+                margin-right: 25px;
+            }
+        }
+
+        .swiper-button-next{
+            right: 120px;
+
+            i{
+                margin-left: 25px;
+            }
+        }
+    }
+
+    .swiper-pagination{
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        display: none;
+    }
+    
+    .swiper-pagination-bullet{
+        background: transparent;
+        margin: 0 10px !important;
+    }
+
+    .swiper-pagination-bullet-active .path{
+        display: inline-block !important;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+        animation: dash linear 10s;
+        animation-iteration-count: unset;
+    }
+
+    .path {
+        display: none;
+    }
+    
+    @keyframes dash {
+
+      from {
+        stroke-dashoffset: 1000;
+      }
+    
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+}

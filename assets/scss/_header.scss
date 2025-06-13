@@ -1,0 +1,58 @@
+/* --------------- header --------------- */
+
+.header-ma{
+
+    .caption{
+        padding: 120px 0;
+        position: relative;
+
+        h1{
+            width: 100%;
+            font-size: 120px;
+            line-height: 1.2;
+        }
+
+        .text{
+            padding: 40px 40px 0 0;
+            text-wrap: pretty;
+        }
+
+        .img{
+            position: absolute;
+            bottom: -80px;
+            right: 0;
+            width: 220px;
+
+            .icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 80px;
+            }
+        }
+    }
+    
+    .mimg{
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+
+        .lg-text{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            clip-path: url(#svgTextPath);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            transform: translateX(30%) translateY(60%);
+
+            span{
+                font-family: "Playfair Display", serif;
+                font-style: italic;
+            }
+        }
+    }
+}

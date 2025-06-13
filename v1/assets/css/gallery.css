@@ -1,0 +1,63 @@
+.sec {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    padding: 0 !important;
+}
+
+.main1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.main2 {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    display: none;
+}
+
+.item {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--item);
+    border: 0.1px grey solid;
+    object-fit: cover;
+}
+
+.item-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.left {
+    margin: 0 25px;
+}
+
+.right {
+    margin: 0 25px;
+}
+
+.exNavbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .main1 {
+        flex-direction: column;
+    }
+
+    .right {
+        margin-top: 25px;
+    }
+}

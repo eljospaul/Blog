@@ -1,0 +1,327 @@
+
+:root {
+    --bg-color: #212121;
+    --theme-color: #181818;
+    --main-color: #005cc3;
+}
+
+$bg-color: var(--bg-color);
+$sub-color: var(--sub-color);
+$theme-color: var(--theme-color);
+$main-color: var(--main-color);
+$heading-color: var(--heading-color);
+$p-color: var(--p-color);
+$border-color: var(--border-color);
+$mobile-xs-screen: 480px;
+$tablet-sm-screen: 768px;
+$desk-md-screen: 992px;
+$desk-lg-screen: 1300px;
+
+
+
+// menu
+@import 'menu';
+
+// header
+@import 'header';
+
+// Services
+@import 'services';
+
+// Works
+@import 'works';
+
+// Clients
+@import 'clients';
+
+// testimonials
+@import 'testimonials';
+
+// Awards
+@import 'awards';
+
+// About
+@import 'about';
+
+// blogs
+@import 'blogs';
+
+// footer
+@import 'footer';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    background-color: $theme-color;
+}
+
+main{
+    background-image: url(../imgs/bg-main.jpg);
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    margin: 0;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -3px;
+}
+
+h2{
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -3px;
+}
+
+h3{
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -2px;
+}
+
+h4{
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+
+h5{
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+h6{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.sub-color{
+    color: #999898;
+}
+
+.sub-head{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.sec-head{
+
+    .sub-head{
+        position: relative;
+        padding-left: 25px;
+
+        &:after{
+            content: '';
+            width: 7px;
+            height: 7px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+}
+
+.loader-wrap svg{
+    fill: #1d1d1d;
+}
+
+.butn{
+
+    &.butn-bord{
+        border: 1px solid rgba(255,255,255,.3);
+
+        &:hover{
+            background: #fff;
+            color: #212121;
+        }
+    }
+}
+
+.icon.invert{
+
+    img{
+        filter: invert(1);
+    }
+}
+
+.butn{
+
+    .icon{
+        width: 18px;
+    }
+
+    &:hover{
+
+        .icon.invert{
+
+            img{
+                filter: invert(0);
+            }
+        }
+    }
+}
+
+
+/* ====================== [ Start Responsive ] ====================== */
+
+@media screen and (max-width: $desk-md-screen) {
+
+    .sub-head{
+        margin-left: 15px;
+    }
+
+    .header-ma .caption h1{
+        font-size: 60px;
+    }
+
+    .header-ma .caption .img{
+        width: 175px;
+    }
+
+    .header-ma .mimg .lg-text{
+
+        text{
+            font-size: 140px !important;
+        }
+    }
+
+    .services-ds .item .title h2{
+        font-size: 80px;
+        line-height: 1.2;
+    }
+
+    .awards-sa{
+        padding-bottom: 0;
+    }
+
+    .about-ma{
+        display: block !important;
+    }
+
+    .about-ma .content{
+        width: 100%;
+        padding: 0 15px !important;
+
+        .item{
+            margin-top: 140px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-sm-screen) {
+
+    .sec-head{
+        display: block !important;
+
+        .ml-auto{
+            margin-top: 15px;
+        }
+    }
+
+    .header-ma .caption{
+        display: block !important;
+        padding: 140px 0 80px;
+
+        h1{
+            font-size: 45px;
+        }
+    }
+
+    .header-ma .mimg{
+        height: 400px;
+    }
+
+    .sec-head{
+
+        h3{
+            font-size: 28px;
+            line-height: 1.4;
+            letter-spacing: -1px;
+        }
+    }
+
+    .services-ds .item{
+        display: block !important;
+    }
+
+    .services-ds .item .title{
+        margin-bottom: 0;
+    }
+
+    .services-ds .item .title h2{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .services-ds .item .icon{
+        margin-left: 15px;
+    }
+
+    .works-ma{
+        padding-bottom: 200px;
+    }
+
+    .works-ma .gallery-text .text h4{
+        font-size: 40px;
+    }
+
+    .testimonials-ds .container{
+        padding: 100px 15px;
+    }
+
+    .testimonials-ds .qoute-icon {
+
+        .text{
+            width: 180px;
+        }
+
+        .icon{
+            width: 80px;
+        }
+    }
+
+    .testimonials-ds .item{
+        
+        h4{
+            font-size: 25px;
+            letter-spacing: normal;
+        }
+    }
+
+    .awards-sa .item-line .honors{
+        margin-bottom: 15px;
+    }
+
+    .awards-sa .item-line .project-date{
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,91 @@
+/* --------------- footer --------------- */
+
+.footer-ds{
+    border-color: rgba(255,255,255,.3);
+
+    .subscribe{
+
+        .form-group{
+            margin: 60px 0 15px;
+            position: relative;
+
+            label{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            input{
+                padding: 20px 50px 20px 20px;
+                background: $bg-color;
+                border: 0;
+                border-radius: 5px;
+                width: 100%;
+                color: #fff;
+            }
+
+            button{
+                background: transparent;
+                border: 0;
+                position: absolute;
+                bottom: 20px;
+                right: 15px;
+                width: 25px;
+            }
+        }
+
+        span{
+            color: #808080;
+            font-size: 13px;
+
+            a{
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .contact-info{
+
+        .item{
+
+            h6{
+                margin-bottom: 15px;
+            }
+
+            p{
+                font-size: 14px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .sub-footer{
+
+        .copy{
+
+            .logo{
+                width: 25px;
+            }
+
+            p{
+                font-size: 14px;
+                
+                a{
+                    color: #fff;
+                }
+            }
+        }
+
+        .links{
+            width: 100%;
+
+            a{
+                font-size: 14px;
+            }
+
+            .active{
+                color: #fff;
+            }
+        }
+    }
+}
