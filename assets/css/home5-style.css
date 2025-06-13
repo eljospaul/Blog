@@ -3,6 +3,10 @@
   --theme-color: #181818;
   --main-color: #005cc3; }
 
+html {
+  overflow-x: hidden;
+}
+
 /* --------------- Menu --------------- */
 .navbar {
   position: absolute;
@@ -630,13 +634,22 @@ p {
   filter: invert(0); }
 
 /* ====================== [ Start Responsive ] ====================== */
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 80px !important;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  h1 {
+    font-size: 60px !important;
+  }
   .ctaBtn {
     display: none !important; }
     .slideHid {
     display: none !important; }
   .introSection {
-    padding-top: 10px !important; }
+    padding-top: 50px !important; }
   .spaceWatermark {
     display: none !important; }
   .designTitle {
@@ -667,7 +680,9 @@ p {
       margin-top: 140px; } }
 
 @media screen and (max-width: 768px) {
-  
+  .introSection {
+    padding-top: 10px !important; 
+    padding-bottom: 80px !important; }
   .sec-head {
     display: block !important; }
     .sec-head .ml-auto {
