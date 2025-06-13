@@ -90,13 +90,14 @@ const music = [
         "title": "Noise",
         "description": "– a raw, mellow vibe straight from my room to your ears. Lo-fi mood, no filters, just sound and soul.",
         "image": "../imgs/works/w2.png",
-        "date": "06-12-2025"
+        "date": "06-12-2025",
+        "release": "Latest Release"
     },
     {
         "title": "Mist",
         "description": "- Made with nothing but heart, headphones, and late nights. This one’s personal — the beginning of everything.",
         "image": "../imgs/works/w1.jpg",
-        "date": "06-03-2025"
+        "date": "06-03-2025",
     }
 ];
 let musicIndex = 0;
@@ -119,10 +120,10 @@ function loadmusic(music) {
   musicImage.src = `./assets/images/${music.image}`;
   audio.src = `./assets/audio/${music.title}.mp3`;
   description.innerHTML = getMusicTitle(music.description);
-  if (diffInDays <= daysRange) {
+  if (diffInDays <= daysRange || music.release === "Latest Release") {
     releaseDate.innerHTML = "Latest Release";
   } else {
-    releaseDate.innerHTML = (music.date);
+    releaseDate.innerHTML = new Date(music.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
   }
 }
 
